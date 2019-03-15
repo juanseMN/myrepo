@@ -3,7 +3,7 @@
     <title>Formulario</title>
     <link rel="icon" type="image/ico" href="icons/f.png"/>
   </head>
-      <body background="images/10.jpg">
+      <body background="images/2.jpg">
         <center><b><font face="Times new Roman" size="15" color="BLACK">Formulario de registro</font></b></center><br><br><br>
 
         <table border="0" align="center">
@@ -11,18 +11,18 @@
 
           <tr>
             <td ><font face="Arial" color="BLACK">Nombres:</font></td>
-            <td ><input type="text" name= "nom"  required></td >
+            <td ><input type="text" name= "user" placeholder="Ingresar nombres"  required></td >
           </tr>
 
           <tr>
             <td><font face="Arial" color="BLACK">Apellidos:</font><br></td>
-            <td ><input type="text" name= "ape"  required></td>
+            <td ><input type="text" name= "ape" placeholder="Ingresar apellidos"  required></td>
           </tr>
 
           <tr>
             <td><font face="Arial" color="BLACK">Tipo identificacion:</font><br></td>
             <td><select class="combo" required>
-              <option></option>
+              <option>Identificacion</option>
               <option>T.I.</option>
               <option>C.C.</option>
               <option>C.E.</option>
@@ -33,13 +33,13 @@
 
           <tr>
             <td><font face="Arial" color="BLACK">Nro. Identificacion:</font><br></td>
-            <td ><input type="number" name= "ide"  required></td>
+            <td ><input type="number" name= "user" placeholder="Ingresar numero"  required></td>
           </tr>
 
           <tr>
             <td><font face="Arial" color="BLACK">Genero:</font><br></td>
             <td><select class="combo">
-              <option></option>
+              <option>Genero</option>
               <option>Masculino</option>
               <option>Femenino</option>
               <option>Otro</option>
@@ -48,72 +48,73 @@
 
           <tr>
             <td><font face="Arial" color="BLACK">Telefono:</font><br></td>
-              <td ><input type="number" name= "user"></td >
+              <td ><input type="number" name= "user" placeholder="Ingresar Telefono"></td >
           </tr>
 
           <tr>
             <td><font face="Arial" color="BLACK">Celular:</font><br></td>
-            <td ><input type="number" name= "user"  required></td >
+            <td ><input type="number" name= "user"  placeholder="Ingresar celular" required></td >
           </tr>
 
           <tr>
-          <td><font face="Arial" color="BLACK">Departamento nac.:</font><br></td>
+          <td><font face="Arial" color="BLACK">Departamento:</font><br></td>
           <td><select class="combo">
-            <option></option>
-            <option>Amazonas</option>
-            <option>Antioquia</option>
-            <option>Arauca</option>
-            <option>Atlántico</option>
-            <option>Bolívar</option>
-            <option>Boyacá</option>
-            <option>Caldas</option>
-            <option>Caquetá</option>
-            <option>Nariño</option>
-            <option>Chocó</option>
+            <option> Departamento</option>
+            <option value="A">Amazonas</option>
+            <option value="AN">Antioquia</option>
+            <option value="AR">Arauca</option>
+            <option value="AT">Atlántico</option>
+            <option value="B">Bolívar</option>
+            <option value="BO">Boyacá</option>
+            <option value="C">Caldas</option>
+            <option value="CA">Caquetá</option>
+            <option value="N">Nariño</option>
+            <option value="CH">Chocó</option>
           </select></td>
           </tr>
 
           <tr>
-          <td><font face="Arial" color="BLACK">Ciudad nac.:</font><br></td>
+          <td><font face="Arial" color="BLACK">Ciudad:</font><br></td>
           <td><select class="combo">
-            <option></option>
-            <option>Leticia</option>
-            <option>Medellín</option>
-            <option>Arauca</option>
-            <option>Barranquilla</option>
-            <option>Cartagena</option>
-            <option>Tunja</option>
-            <option>Manizales</option>
-            <option>Florencia</option>
-            <option>Ipiales</option>
-            <option>Pasto</option>
+            <option> Ciudades</option>
+            <option value="LE">Leticia</option>
+            <option value="ME">Medellín</option>
+            <option value="PO">Popayan</option>
+            <option value="BA">Barranquilla</option>
+            <option value="CAR">Cartagena</option>
+            <option value="CAL">Cali</option>
+            <option value="MAN">Manizales</option>
+            <option value="FLO">Florencia</option>
+            <option value="BOG">Bogota</option>
+            <option value="PAS">Pasto</option>
           </select></td>
           </tr>
 
           <tr>
             <td><font face="Arial" color="BLACK">Correo electronico:</font><br></td>
-            <td ><input type="email" id="mail"/></td>
+            <td ><input type="email" name="mail" placeholder="Ingresar correo"/></td>
           </tr>
 
           <tr>
             <td><font face="Arial" color="BLACK">Contraseña:</font><br></td>
-            <td><input type="password"></td>
+            <td><input type="password" placeholder="Ingresar contraseña"></td>
           </tr>
 
           <tr>
             <td><font face="Arial" color="BLACK">Confirmar contraseña:</font><br></td>
-            <td><input type="password"></td>
+            <td><input type="password" placeholder="confirma contraseña"></td>
           </tr>
 
           <tr>
             <td><font face="Arial" color="BLACK">Foto:</font><br></td>
-            <td ><input type="text" name= "userf"><input type="submit" value="Examinar"></td>
+            <td ><form name="subida-imagenes" type="POST" enctype="multipart/form-data">
+              <input type="file" name="imagen"></form></td>
           </tr>
 	       </form>
 
 		<table>
 		<br>
-		<center><input type="submit" value="Examinar"></center>
-		</table>      
+		<center><input type="submit" value="registrarse"></center>
+		</table>
       </body>
 </html>
