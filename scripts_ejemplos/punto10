@@ -1,0 +1,96 @@
+<html>
+    <head>
+    <title>Tablas de Multiplicar</title>
+    </head>
+    <body background=images/10.jpg><center>
+    <form action="punto_10.php" method="post">
+    <h1>Tablas de multiplicar</h1>
+    <h2>Ingresa un numero del 1 al 10</h4>
+    <input type="text" name="numero">
+    <br><br><input type="submit" value="Calcular">
+    <h1>Serie de Numeros</h1>
+    <h2>Ingresa un numero</h4>
+    <input type="text" name="numero1">
+    <br><br><input type="submit" value="Generar">
+    </form>
+    </body></center>
+</html>
+<?php
+        $num=$_POST ["numero"];
+        echo "<b>TABLA DE MULTIPLICAR DEL <b>".$num;
+        if($num==1){
+            echo "<table border=1>";
+            for($i=1; $i<=10; $i+=1){
+                $mult1=1;
+                $mult=$mult1*$i;
+                echo "<td bgcolor='yellow'>"."<font color='red'>".$i."x".$mult1."=".$mult."</font>"."</td>";
+            }
+            echo "</table><br>";
+        }elseif($num==2){
+            echo "<table border=1>";
+            for($i=1; $i<=10; $i+=1){
+                $mult1=2;
+                $mult=$mult1*$i;
+              echo "<td bgcolor='yellow'>"."<font color='red'>".$i."x".$mult1."=".$mult."</font>"."</td>";
+
+            }
+            echo "</table><br>";
+        }elseif($num==3){
+            echo "<table border=1>";
+            for($i=1; $i<=10; $i+=1){
+                $mult1=3;
+                $mult=$mult1*$i;
+                echo "<td bgcolor='yellow'>"."<font color='red'>".$i."x".$mult1."=".$mult."</font>"."</td>";
+        }
+        }elseif($num==4){
+            echo "<table border=1>";
+            for($i=1; $i<=10; $i+=1){
+                $mult1=4;
+                $mult=$mult1*$i;
+                      echo "<td bgcolor='yellow'>"."<font color='red'>".$i."x".$mult1."=".$mult."</font>"."</td>";
+        }
+        }elseif($num==5){
+            echo "<table border=1>";
+            for($i=1; $i<=10; $i+=1){
+                $mult1=5;
+                $mult=$mult1*$i;
+                echo "<td bgcolor='yellow'>"."<font color='red'>".$i."x".$mult1."=".$mult."</font>"."</td>";
+        }
+        }elseif($num==6){
+            echo "<table border=1>";
+            for($i=1; $i<=10; $i+=1){
+                $mult1=6;
+                $mult=$mult1*$i;
+                echo "<td bgcolor='yellow'>"."<font color='red'>".$i."x".$mult1."=".$mult."</font>"."</td>";
+        }
+        }
+        elseif($num==7){
+            echo "<table border=1>";
+            for($i=1; $i<=10; $i+=1){
+                $mult1=7;
+                $mult=$mult1*$i;
+                  echo "<td bgcolor='yellow'>"."<font color='red'>".$i."x".$mult1."=".$mult."</font>"."</td>";
+        }
+        }elseif($num==8){
+            echo "<table border=1>";
+            for($i=1; $i<=10; $i+=1){
+                $mult1=8;
+                $mult=$mult1*$i;
+                    echo "<td bgcolor='yellow'>"."<font color='red'>".$i."x".$mult1."=".$mult."</font>"."</td>";
+        }
+        }elseif($num==9){
+            echo "<table border=1>";
+            for($i=1; $i<=10; $i+=1){
+                $mult1=9;
+                $mult=$mult1*$i;
+                    echo "<td bgcolor='yellow'>"."<font color='red'>".$i."x".$mult1."=".$mult."</font>"."</td>";
+        }
+        }elseif($num==10){
+            echo "<table border=1>";
+            for($i=1; $i<=10; $i+=1){
+                $mult1=10;
+                $mult=$mult1*$i;
+                      echo "<td bgcolor='yellow'>"."<font color='red'>".$i."x".$mult1."=".$mult."</font>"."</td>";
+        }
+        }
+    ?>
